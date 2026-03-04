@@ -1,0 +1,37 @@
+
+Trong ví dụ này, chúng ta truy vấn block <strong>Currency1aBlock</strong> và hiển thị danh sách các <strong>CurrencyInfo</strong> bên trái màn hình.
+<br/>
+Khi nhấn vào một <strong>CurrencyInfo</strong> bên trái, dữ liệu đầy đủ hơn của <strong>Currency</strong>
+là <strong>CurrencyData</strong> sẽ được tải và hiển thị bên phải.
+<br/><br/>
+
+Đây là ví dụ đơn giản nhất và là ví dụ <strong>"Hello World"</strong> của <strong>FlutterArtist</strong>.
+<br/><br/>
+<strong>Các bước triển khai ví dụ:</strong>
+<ul>
+    <li>Tạo và khai báo cấu trúc một <strong>Shelf</strong> trong <strong>FlutterArtist</strong>, cụ thể
+    trong ví dụ này chúng ta tạo một <strong>Currency1aShelf</strong> với 1 block là <strong>Currency1aBlock</strong></li>
+    <li>Triển khai phương thức <strong>Block.performQuery()</strong> gọi tới <strong>Rest-API</strong>
+        để trả về danh sách các <strong>CurrencyInfo</strong> và hiển thị chúng bên trái màn hình</li>
+    <li>Gọi phương thức <strong>Block.prepareToShow(ITEM)</strong> mỗi khi người dùng nhấn vào một <strong>ITEM</strong> trong danh sách bên trái.
+    </li>
+    <li>Triển khai phương thức <strong>Block.performLoadItemDetailById(ITEM)</strong> để có được một
+        <strong>ITEM_DETAIL</strong> và hiển thị nó ở bên phải màn hinh.
+        <strong>CurrencyInfo --&gt; CurrencyData</strong>
+    </li>
+</ul>
+
+<strong>Mục tiêu của ví dụ:</strong>
+<ul>
+    <li>Giải thích về <strong>Shelf</strong> và <strong>Block</strong></li>
+    <li>Sử dụng <strong>ItemsViewBuilder</strong> để hiển thị các <strong>ITEM(s)</strong>.</li>
+    <li>Sử dụng <strong>ItemsViewBuilder</strong> để hiển thị các <strong>ITEM</strong>.</li>
+    <li>Sử dụng <strong>BlockSectionViewBuilder</strong> để hiển thị một <strong>ITEM_DETAIL</strong>.</li>
+</ul>
+
+
+<strong>Các tài liệu liên quan:</strong>
+<ul>
+    <li><a target="_blank">Document 1</a></li>
+    <li><a target="_blank">Document 2</a></li>
+</ul>

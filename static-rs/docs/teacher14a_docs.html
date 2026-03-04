@@ -1,0 +1,27 @@
+# 14725 <br/>
+
+
+Trong ví dụ này, chúng ta sẽ học cách sử dụng <strong>NumberPagination</strong> để phân trang.
+Sự phân trang dựa trên <strong>FilterCriteria</strong> đang được áp dụng cho <strong>Block</strong>,
+vì vậy khi bạn nhấn vào một trang cụ thể trên <strong>NumberPagination</strong>
+thì <strong>FilterCriteria</strong> hiện tại của <strong>Block</strong> sẽ được sử dụng cho việc truy vấn.
+<ul>
+    <li>Block.query(filterCriteria: currentFilterCriteriaOfBlock)</strong></li>
+</ul>
+Một khi bạn chọn các tiêu chí khác trên <strong>Filter View</strong>
+một <strong>FilterCriteria</strong> mới sẽ được sử dụng để truy vấn <strong>Block</strong>
+và làm thay đổi <strong>NumberPagination</strong> chẳng hạn như <strong>totalPages</strong>.
+
+
+<br/><br/>
+<strong>Mục tiêu của ví dụ:</strong>
+<ul>
+    <li>Sử dụng <strong>NumberPagination</strong></li>
+    <li>Thay đổi các tiêu chí trên bộ lọc (<strong>Filter View</strong>) và xem sự thay đổi của <strong>NumberPagination</strong></li>
+</ul>
+
+<strong>Các tài liệu liên quan:</strong>
+<ul>
+    <li><a target="_blank">Document 1</a></li>
+    <li><a target="_blank">Document 2</a></li>
+</ul>
