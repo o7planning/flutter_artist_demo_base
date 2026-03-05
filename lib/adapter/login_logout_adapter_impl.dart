@@ -5,7 +5,7 @@ import 'package:flutter_artist_core/flutter_artist_core.dart';
 import '../config/fa_dio.dart';
 import '../model/model.dart';
 
-class LoginLogoutAdapterImpl implements ILoginLogoutAdapter {
+class LoginLogoutAdapterImpl implements FlutterArtistLoginLogoutAdapter {
   @override
   ILoggedInUser? fromJson(String json) {
     Map<String, dynamic> map = jsonDecode(json);

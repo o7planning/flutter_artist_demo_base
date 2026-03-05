@@ -5,7 +5,7 @@ import 'package:flutter_artist_core/flutter_artist_core.dart';
 
 import '../model/model.dart';
 
-class NotificationAdapterImpl implements INotificationAdapter {
+class NotificationAdapterImpl implements FlutterArtistNotificationAdapter {
   @override
   Future<ApiResult<INotificationSummary>>
   performLoadNotificationSummary() async {
