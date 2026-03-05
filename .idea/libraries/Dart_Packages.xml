@@ -614,14 +614,14 @@
         <entry key="fresh">
           <value>
             <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/fresh-0.4.4/lib" />
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/fresh-0.6.1/lib" />
             </list>
           </value>
         </entry>
         <entry key="fresh_dio">
           <value>
             <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/fresh_dio-0.4.5/lib" />
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/fresh_dio-0.6.0/lib" />
             </list>
           </value>
         </entry>
@@ -1673,8 +1673,8 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/form_builder_file_picker-5.1.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/form_builder_image_picker-4.4.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/form_builder_validators-11.3.0/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fresh-0.4.4/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fresh_dio-0.4.5/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fresh-0.6.1/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fresh_dio-0.6.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fwfh_cached_network_image-0.16.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fwfh_chewie-0.16.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fwfh_just_audio-0.17.0/lib" />

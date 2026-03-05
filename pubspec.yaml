@@ -36,7 +36,7 @@ dependencies:
   davi: ^4.0.1
   get: ^5.0.0-release-candidate-9.3.2
   dio: ^5.9.1 # ^5.9.0 # ^5.7.0
-  fresh_dio: ^0.4.5 # ^0.4.4
+  fresh_dio: ^0.6.0 # ^0.4.5 # ^0.4.4
 
   json_serializable: ^6.12.0 # ^6.11.4 # ^6.11.3
   json_annotation: ^4.10.0 # ^4.9.0

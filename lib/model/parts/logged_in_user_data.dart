@@ -62,4 +62,10 @@ class LoggedInUserData implements ILoggedInUser, OAuth2Token {
       _$LoggedInUserDataFromJson(json);
 
   Map<String, dynamic> toJson() => _$LoggedInUserDataToJson(this);
+
+  @override
+  DateTime? get expiresAt => null;
+
+  @override
+  DateTime? get issuedAt => null;
 }
