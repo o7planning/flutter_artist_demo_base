@@ -13,7 +13,7 @@ class Employee36aBlock
           EmptyFilterInput,
           EmptyFilterCriteria,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   static const blkName = "employee36a-block";
 
@@ -89,11 +89,11 @@ class Employee36aBlock
   }
 
   @override
-  Future<EmptyFormRelatedData> performLoadFormRelatedData({
+  Future<EmptyAdditionalFormRelatedData> performLoadAdditionalFormRelatedData({
     required Object? parentBlockCurrentItem,
     required EmployeeData? currentItemDetail,
     required EmptyFilterCriteria filterCriteria,
   }) async {
-    return EmptyFormRelatedData();
+    return EmptyAdditionalFormRelatedData();
   }
 }

@@ -14,7 +14,7 @@ class Teacher14aBlock
           EmptyFilterInput,
           Teacher14aFilterCriteria,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   static const String blkName = "teacher14a-block";
 
@@ -85,11 +85,11 @@ class Teacher14aBlock
   }
 
   @override
-  Future<EmptyFormRelatedData> performLoadFormRelatedData({
+  Future<EmptyAdditionalFormRelatedData> performLoadAdditionalFormRelatedData({
     required Object? parentBlockCurrentItem,
     required TeacherData? currentItemDetail,
     required Teacher14aFilterCriteria filterCriteria,
   }) async {
-    return EmptyFormRelatedData();
+    return EmptyAdditionalFormRelatedData();
   }
 }

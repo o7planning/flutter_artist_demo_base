@@ -13,7 +13,7 @@ class Currency49aBlock
           EmptyFilterInput,
           EmptyFilterCriteria,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   static const String blkName = "currency49a-block";
 
@@ -85,11 +85,11 @@ class Currency49aBlock
   }
 
   @override
-  Future<EmptyFormRelatedData> performLoadFormRelatedData({
+  Future<EmptyAdditionalFormRelatedData> performLoadAdditionalFormRelatedData({
     required Object? parentBlockCurrentItem,
     required CurrencyData? currentItemDetail,
     required EmptyFilterCriteria filterCriteria,
   }) async {
-    return EmptyFormRelatedData();
+    return EmptyAdditionalFormRelatedData();
   }
 }

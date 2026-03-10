@@ -13,7 +13,7 @@ class Product08aBlock
           EmptyFilterInput,
           EmptyFilterCriteria,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   static const String blkName = "product08a-block";
 
@@ -90,11 +90,11 @@ class Product08aBlock
   }
 
   @override
-  Future<EmptyFormRelatedData> performLoadFormRelatedData({
+  Future<EmptyAdditionalFormRelatedData> performLoadAdditionalFormRelatedData({
     required Object? parentBlockCurrentItem,
     required ProductData? currentItemDetail,
     required EmptyFilterCriteria filterCriteria,
   }) async {
-    return EmptyFormRelatedData();
+    return EmptyAdditionalFormRelatedData();
   }
 }

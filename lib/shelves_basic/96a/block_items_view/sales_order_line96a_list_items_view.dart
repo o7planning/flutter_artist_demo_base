@@ -108,7 +108,7 @@ class SalesOrderLine96aDaviTableItemsView
     // SalesOrderLine96aBlock block:
     BlockCurrentItemSettingResult result = await block
         .refreshItemAndSetAsCurrent(item: salesOrderLine, forceLoadForm: true);
-    if (!result.successForAll) {
+    if (!result.successForFirst) {
       return;
     }
     SalesOrderLine96aDialog.openDialog(context);

@@ -14,7 +14,7 @@ class SingleDepartmentFormModel
           int, //
           DepartmentData,
           DepartmentFormInput,
-          DepartmentFormRelatedData
+          DepartmentAdditionalFormRelatedData
         > {
   final _companyRestProvider = CompanyRestProvider();
   final _employeeRestProvider = EmployeeRestProvider();
@@ -60,7 +60,7 @@ class SingleDepartmentFormModel
     required Object? parentMultiOptPropValue,
     required DepartmentFormInput? formInput,
     required DepartmentData? itemDetail,
-    required DepartmentFormRelatedData formRelatedData,
+    required DepartmentAdditionalFormRelatedData additionalFormRelatedData,
   }) async {
     throw UnimplementedError();
   }
@@ -73,7 +73,7 @@ class SingleDepartmentFormModel
     required Object? parentBlockCurrentItemId,
     required Object? parentMultiOptPropValue,
     required DepartmentFormInput formInput,
-    required DepartmentFormRelatedData formRelatedData,
+    required DepartmentAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     throw UnimplementedError();
   }
@@ -92,7 +92,7 @@ class SingleDepartmentFormModel
   Map<String, SimpleValueWrap?>? extractUpdateValuesForSimpleProps({
     required Object? parentBlockCurrentItemId,
     required DepartmentFormInput formInput,
-    required DepartmentFormRelatedData formRelatedData,
+    required DepartmentAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return null;
   }
@@ -101,7 +101,7 @@ class SingleDepartmentFormModel
   Map<String, dynamic>? extractSimplePropValuesFromItemDetail({
     required Object? parentBlockCurrentItemId,
     required DepartmentData itemDetail,
-    required DepartmentFormRelatedData formRelatedData,
+    required DepartmentAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return {
       "id": itemDetail.id,
@@ -118,7 +118,7 @@ class SingleDepartmentFormModel
     required XData multiOptPropXData,
     required Object? parentMultiOptPropValue,
     required DepartmentData itemDetail,
-    required DepartmentFormRelatedData formRelatedData,
+    required DepartmentAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     if (multiOptPropName == "company") {
       var listXData = multiOptPropXData as ListXData<int, CompanyInfo>;

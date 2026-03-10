@@ -123,7 +123,7 @@ class _Note42aInputDialogState extends State<Note42aInputDialog> {
       //
       BlockQuickItemCreationResult result = await widget.note42aBlock
           .executeQuickItemCreationAction(action: createAction);
-      if (result.successForAll && context.mounted) {
+      if (result.successForFirst && context.mounted) {
         Navigator.of(context).pop();
       }
     } else {
@@ -141,7 +141,7 @@ class _Note42aInputDialogState extends State<Note42aInputDialog> {
       //
       BlockQuickItemUpdateResult result = await widget.note42aBlock
           .executeQuickItemUpdateAction(action: updateAction);
-      if (result.successForAll && context.mounted) {
+      if (result.successForFirst && context.mounted) {
         Navigator.of(context).pop();
       }
     }

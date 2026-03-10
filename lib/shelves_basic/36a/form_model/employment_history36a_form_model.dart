@@ -13,7 +13,7 @@ class EmploymentHistory36aFormModel
           int, //
           EmploymentHistoryData,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   final _employeePositionRestProvider = EmployeePositionRestProvider();
   final _companyRestProvider = CompanyRestProvider();
@@ -73,7 +73,7 @@ class EmploymentHistory36aFormModel
     required Object? parentMultiOptPropValue,
     required EmptyFormInput? formInput,
     required EmploymentHistoryData? itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) async {
     if (multiOptPropName == "employeePosition") {
       ApiResult<EmployeePositionInfoPage> result =
@@ -117,7 +117,7 @@ class EmploymentHistory36aFormModel
     required Object? parentMultiOptPropValue,
     required Object? parentBlockCurrentItemId,
     required EmptyFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return null;
   }
@@ -136,7 +136,7 @@ class EmploymentHistory36aFormModel
   Map<String, SimpleValueWrap?>? extractUpdateValuesForSimpleProps({
     required Object? parentBlockCurrentItemId,
     required EmptyFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return null;
   }
@@ -145,7 +145,7 @@ class EmploymentHistory36aFormModel
   Map<String, dynamic>? extractSimplePropValuesFromItemDetail({
     required Object? parentBlockCurrentItemId,
     required EmploymentHistoryData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return {
       "id": itemDetail.id,
@@ -162,7 +162,7 @@ class EmploymentHistory36aFormModel
     required XData multiOptPropXData,
     required Object? parentMultiOptPropValue,
     required EmploymentHistoryData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     if (multiOptPropName == "employeePosition") {
       // Use "OptValueWrap.single" for MultiOptFormPropDef.singleSelection:

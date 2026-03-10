@@ -14,7 +14,7 @@ class Supplier26aBlock
           EmptyFilterInput,
           EmptyFilterCriteria,
           Supplier26aFormInput, // **
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   static const String blkName = "supplier26a-block";
 
@@ -86,11 +86,11 @@ class Supplier26aBlock
   }
 
   @override
-  Future<EmptyFormRelatedData> performLoadFormRelatedData({
+  Future<EmptyAdditionalFormRelatedData> performLoadAdditionalFormRelatedData({
     required Object? parentBlockCurrentItem,
     required SupplierData? currentItemDetail,
     required EmptyFilterCriteria filterCriteria,
   }) async {
-    return EmptyFormRelatedData();
+    return EmptyAdditionalFormRelatedData();
   }
 }

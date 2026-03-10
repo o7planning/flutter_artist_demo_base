@@ -11,7 +11,7 @@ class Supplier11aFormModel
           int, //
           SupplierData,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   final _supplierRestProvider = SupplierRestProvider();
   final _supplierTypeRestProvider = SupplierTypeRestProvider();
@@ -60,7 +60,7 @@ class Supplier11aFormModel
     required Object? parentMultiOptPropValue,
     required EmptyFormInput? formInput,
     required SupplierData? itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) async {
     if (multiOptPropName == "supplierType") {
       ApiResult<SupplierTypeInfoPage> result = await _supplierTypeRestProvider
@@ -84,7 +84,7 @@ class Supplier11aFormModel
     required Object? parentMultiOptPropValue,
     required Object? parentBlockCurrentItemId,
     required EmptyFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return null;
   }
@@ -103,7 +103,7 @@ class Supplier11aFormModel
   Map<String, SimpleValueWrap?>? extractUpdateValuesForSimpleProps({
     required Object? parentBlockCurrentItemId,
     required EmptyFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return null;
   }
@@ -112,7 +112,7 @@ class Supplier11aFormModel
   Map<String, dynamic>? extractSimplePropValuesFromItemDetail({
     required Object? parentBlockCurrentItemId,
     required SupplierData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return {
       "id": itemDetail.id,
@@ -133,7 +133,7 @@ class Supplier11aFormModel
     required XData multiOptPropXData,
     required Object? parentMultiOptPropValue,
     required SupplierData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     if (multiOptPropName == "supplierType") {
       return OptValueWrap.single(itemDetail.supplierType);

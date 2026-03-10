@@ -16,7 +16,7 @@ class SingleDepartmentBlock
           SingleDepartmentFilterInput,
           SingleDepartmentFilterCriteria,
           DepartmentFormInput,
-          DepartmentFormRelatedData
+          DepartmentAdditionalFormRelatedData
         > {
   static const String blkName = "single-department-block";
 
@@ -91,7 +91,8 @@ class SingleDepartmentBlock
   }
 
   @override
-  Future<DepartmentFormRelatedData> performLoadFormRelatedData({
+  Future<DepartmentAdditionalFormRelatedData>
+  performLoadAdditionalFormRelatedData({
     required Object? parentBlockCurrentItem,
     required DepartmentData? currentItemDetail,
     required SingleDepartmentFilterCriteria filterCriteria,

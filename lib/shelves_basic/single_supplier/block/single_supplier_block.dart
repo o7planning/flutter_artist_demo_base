@@ -11,7 +11,7 @@ class SingleSupplierBlock
           IntIdFilterInput,
           IntIdFilterCriteria,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   static const String blockName = "single-supplier-block";
 
@@ -75,11 +75,11 @@ class SingleSupplierBlock
   }
 
   @override
-  Future<EmptyFormRelatedData> performLoadFormRelatedData({
+  Future<EmptyAdditionalFormRelatedData> performLoadAdditionalFormRelatedData({
     required Object? parentBlockCurrentItem,
     required SupplierData? currentItemDetail,
     required IntIdFilterCriteria filterCriteria,
   }) async {
-    return EmptyFormRelatedData();
+    return EmptyAdditionalFormRelatedData();
   }
 }

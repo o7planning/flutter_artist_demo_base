@@ -11,7 +11,7 @@ class SingleSupplierFormModel
           int, //
           SupplierData,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   final supplierRestProvider = SupplierRestProvider();
   final supplierTypeRestProvider = SupplierTypeRestProvider();
@@ -58,7 +58,7 @@ class SingleSupplierFormModel
     required Object? parentMultiOptPropValue,
     required EmptyFormInput? formInput,
     required SupplierData? itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) async {
     if (multiOptPropName == "supplierType") {
       ApiResult<SupplierTypeInfoPage> result = await supplierTypeRestProvider
@@ -82,7 +82,7 @@ class SingleSupplierFormModel
     required Object? parentMultiOptPropValue,
     required Object? parentBlockCurrentItemId,
     required EmptyFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return null;
   }
@@ -94,7 +94,7 @@ class SingleSupplierFormModel
     required XData multiOptPropXData,
     required Object? parentMultiOptPropValue,
     required SupplierData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     if (multiOptPropName == "supplierType") {
       return OptValueWrap<SupplierTypeInfo>.single(itemDetail.supplierType);
@@ -105,7 +105,7 @@ class SingleSupplierFormModel
   @override
   Map<String, SimpleValueWrap?>? extractUpdateValuesForSimpleProps({
     required Object? parentBlockCurrentItemId,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
     required EmptyFormInput formInput,
   }) {
     return null;
@@ -114,7 +114,7 @@ class SingleSupplierFormModel
   @override
   Map<String, dynamic>? extractSimplePropValuesFromItemDetail({
     required Object? parentBlockCurrentItemId,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
     required SupplierData itemDetail,
   }) {
     // SimpleFormPropDef<dynamic>(propName: "xFiles"), // or

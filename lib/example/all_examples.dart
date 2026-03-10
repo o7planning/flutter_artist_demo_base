@@ -130,6 +130,7 @@ final example_system_log25a = Example(
   shortDesc: "Block, QuickAction",
   description: "BlockQuickMultiItemCreationAction",
   documentId: 14729,
+  documentReady: true,
 );
 
 final example_supplier26a = Example(
@@ -294,5 +295,20 @@ var exampleList = [
   example_currency49a,
   example_supplier71a,
 
-  // ***************************************************************************
+  //
+  // example_employee04a,
+  // example_employee22a,
+  // example_bookExt41a,
+  // example_companyExt31a,
+  // example_appUser06a,
+  // example_catProduct13a,
+  // example_employee21a,
+  // example_currency37a,
+  // example_currency38a,
+  // example_cdeDiagram39a,
+  // example_systemLog51a,
+  // example_bestSelling52a,
+  // example_country54a,
+  // example_empEmploymentHistory60a,
+  // example_country61a,
 ];

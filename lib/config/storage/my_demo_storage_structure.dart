@@ -122,8 +122,6 @@ class MyDemoStorageStructure extends StorageStructure {
 
     FlutterArtist.storage.registerShelf(() => SingleDepartmentShelf());
     FlutterArtist.storage.registerShelf(() => SingleSupplierShelf());
-
-
     // *************************************************************************
     // *************************************************************************
   }

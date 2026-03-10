@@ -13,7 +13,7 @@ class Supplier26aFormModel
           int, //
           SupplierData,
           Supplier26aFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   final _supplierProvider = SupplierRestProvider();
   final _supplierTypeProvider = SupplierTypeRestProvider();
@@ -62,7 +62,7 @@ class Supplier26aFormModel
     required Object? parentMultiOptPropValue,
     required Supplier26aFormInput? formInput,
     required SupplierData? itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) async {
     if (multiOptPropName == "supplierType") {
       ApiResult<SupplierTypeInfoPage> result = await _supplierTypeProvider
@@ -85,7 +85,7 @@ class Supplier26aFormModel
     required Object? parentMultiOptPropValue,
     required Object? parentBlockCurrentItemId,
     required Supplier26aFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     if (multiOptPropName == "supplierType") {
       var listXData = multiOptPropXData as ListXData<int, SupplierTypeInfo>;
@@ -102,7 +102,7 @@ class Supplier26aFormModel
   Map<String, SimpleValueWrap?>? extractUpdateValuesForSimpleProps({
     required Object? parentBlockCurrentItemId,
     required Supplier26aFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return {
       "email": SimpleValueWrap.useIfNotNull(formInput.email),
@@ -130,7 +130,7 @@ class Supplier26aFormModel
   Map<String, dynamic>? extractSimplePropValuesFromItemDetail({
     required Object? parentBlockCurrentItemId,
     required SupplierData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return {
       "id": itemDetail.id,
@@ -151,7 +151,7 @@ class Supplier26aFormModel
     required XData multiOptPropXData,
     required Object? parentMultiOptPropValue,
     required SupplierData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     if (multiOptPropName == "supplierType") {
       return OptValueWrap.single(itemDetail.supplierType);

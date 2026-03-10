@@ -11,7 +11,7 @@ class SalesOrder96aFormModel
           int, //
           SalesOrderData,
           EmptyFormInput,
-          EmptyFormRelatedData
+          EmptyAdditionalFormRelatedData
         > {
   final _salesOrderRestProvider = SalesOrderRestProvider();
   final _customerRestProvider = CustomerRestProvider();
@@ -52,7 +52,7 @@ class SalesOrder96aFormModel
     required Object? parentMultiOptPropValue,
     required EmptyFormInput? formInput,
     required SalesOrderData? itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) async {
     if (multiOptPropName == "customer") {
       ApiResult<CustomerInfoPage> result = await _customerRestProvider
@@ -76,7 +76,7 @@ class SalesOrder96aFormModel
     required Object? parentMultiOptPropValue,
     required Object? parentBlockCurrentItemId,
     required EmptyFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return null;
   }
@@ -95,7 +95,7 @@ class SalesOrder96aFormModel
   Map<String, SimpleValueWrap?>? extractUpdateValuesForSimpleProps({
     required Object? parentBlockCurrentItemId,
     required EmptyFormInput formInput,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return null;
   }
@@ -104,7 +104,7 @@ class SalesOrder96aFormModel
   Map<String, dynamic>? extractSimplePropValuesFromItemDetail({
     required Object? parentBlockCurrentItemId,
     required SalesOrderData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     return {
       "id": itemDetail.id,
@@ -120,7 +120,7 @@ class SalesOrder96aFormModel
     required XData multiOptPropXData,
     required Object? parentMultiOptPropValue,
     required SalesOrderData itemDetail,
-    required EmptyFormRelatedData formRelatedData,
+    required EmptyAdditionalFormRelatedData additionalFormRelatedData,
   }) {
     if (multiOptPropName == "customer") {
       return OptValueWrap.single(itemDetail.customer);

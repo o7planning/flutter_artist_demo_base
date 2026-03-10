@@ -117,7 +117,7 @@ class _Customer43aCodeDialogState extends State<Customer43aCodeDialog> {
     //
     BlockQuickItemUpdateResult result = await widget.customer43aBlock
         .executeQuickItemUpdateAction(action: updateAction);
-    if (result.successForAll && context.mounted) {
+    if (result.successForFirst && context.mounted) {
       Navigator.of(context).pop();
     }
   }
