@@ -67,30 +67,21 @@ dependencies:
   flutter_left_right_container:
     path: ../flutter_left_right_container
 
-  flutter_artist_core:
-    path: ../flutter_artist_core
+  flutter_artist_core: ^0.0.1
 
-  flutter_artist_commons_ui:
-    path: ../flutter_artist_commons_ui
-  flutter_artist_dio:
-    path: ../flutter_artist_dio
-  flutter_artist:
-    path: ../flutter_artist
+  flutter_artist_commons_ui: ^0.0.1
+  flutter_artist_dio: ^0.0.1
+  flutter_artist: ^0.0.1
 
-  flutter_fa_davi_table:
-    path: ../flutter_fa_davi_table
+  flutter_fa_davi_table: ^0.0.1
 
-  flutter_artist_getx_adapter:
-    path: ../flutter_artist_getx_adapter
+  flutter_artist_getx_adapter: ^0.0.1
 
-  flutter_fa_form_builder:
-    path: ../flutter_fa_form_builder
+  flutter_fa_form_builder: ^0.0.1
 
-  flutter_artist_face:
-    path: ../flutter_artist_face
+  flutter_artist_face: ^0.0.1
 
-  flutter_artist_demo_mock_api:
-    path: ../flutter_artist_demo_mock_api
+  flutter_artist_demo_mock_api: ^0.0.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -150,3 +141,23 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+dependency_overrides:
+  flutter_artist_core:
+    path: ../flutter_artist_core
+  flutter_artist_commons_ui:
+    path: ../flutter_artist_commons_ui
+  flutter_artist_dio:
+    path: ../flutter_artist_dio
+  flutter_artist:
+    path: ../flutter_artist
+  flutter_fa_davi_table:
+    path: ../flutter_fa_davi_table
+  flutter_artist_getx_adapter:
+    path: ../flutter_artist_getx_adapter
+  flutter_fa_form_builder:
+    path: ../flutter_fa_form_builder
+  flutter_artist_face:
+    path: ../flutter_artist_face
+  flutter_artist_demo_mock_api:
+    path: ../flutter_artist_demo_mock_api
